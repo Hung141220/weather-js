@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script src="./js/all.min.js"></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,700&display=swap"
+            rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+            <main>
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+                    <input
+                        type="text"
+                        name="search-city"
+                        id="search-input"
+                        placeholder="Tìm kiếm thành phố ..." />
+                </div>
+                <div class="weather-info">
+                    <p class="city-name"></p>
+                    <p class="weather-state"></p>
+                    <img  src="" class="weather-icon" alt="weather-icon" />
+                    <p class="temperature">26</p>
+                </div>
+            </main>
+            <footer>
+                <div class="row">
+                    <div class="item">
+                        <div class="label">MT Mọc</div>
+                        <div class="value sunrise"></div>
+                    </div>
+                    <div class="item">
+                        <div class="label">MT Lặn</div>
+                        <div class="value sunset"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="item">
+                        <div class="label">Độ ẩm</div>
+                        <div class="value"><span class="humidity"></span> %</div>
+                    </div>
+                    <div class="item">
+                        <div class="label">Gió</div>
+                        <div class="value"><span class="wind-speed"></span> km/h</div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script src="./js/index.js" type="text/javascript"></script>
+        <script src="./js/moment.js" type="text/javascript"></script>
+    </body>
+</html>
